@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+}
+
+#main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 怪异盒子 */
+div {
+  box-sizing: border-box;
+}
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  /* 兼容IE */
+  *zoom: 1;
+}
