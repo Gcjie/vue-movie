@@ -1,32 +1,62 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div>
+    <router-view />
+    <van-tabbar
+      v-model="active"
+      @change="onChange"
+      v-show="this.$route.meta.tabbarisShow"
+    >
+      <!-- icon="home-o" -->
+      <van-tabbar-item name="movie" icon="home-o">电影</van-tabbar-item>
+      <van-tabbar-item name="cinema" icon="search">影院</van-tabbar-item>
+      <van-tabbar-item name="mine" icon="friends-o">我的</van-tabbar-item>
+    </van-tabbar>
   </div>
 </template>
 
+<script>
+import { Dialog } from "vant";
+export default {
+  data() {
+    return {
+      mName: "",
+    };
+  },
+  created() {
+    this.location();
+  },
+  computed: {
+    active: {
+      get() {
+        return this.$route.matched[0]
+          ? this.$route.matched[0].path.substring(1)
+          : "";
+      },
+      set() {},
+    },
+  },
+  methods: {
+    onChange(name) {
+      this.$router.push("/" + name);
+    },
+    location() {
+      if (!this.$store.state.cityName) {
+        Dialog.confirm({
+          message: "您当前的定位在：如皋，是否切换到定位城市？",
+        })
+          .then(() => {
+            // on confirm
+            this.$store.commit("setCityName", { name: "如皋" });
+          })
+          .catch(() => {
+            // on cancel
+            this.$router.push("/city");
+          });
+      }
+    },
+  },
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>

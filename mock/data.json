@@ -1,0 +1,130 @@
+{
+  "cinema": {
+    "cinemas": [
+      {
+        "id": 1001,
+        "mark": 0,
+        "rm": "如皋市声屏世纪影城（中山路店）",
+        "sellPrice": "18",
+        "addr": "如皋市如城街道中山路398号西欧国际广场5楼",
+        "distance": "4.9km"
+      },
+      {
+        "id": 1002,
+        "mark": 0,
+        "rm": "星铁IMAX影城",
+        "sellPrice": "22",
+        "addr": "如皋市如城街道惠政路168号新城吾悦广场",
+        "distance": "2.5km"
+      },
+      {
+        "id": 1003,
+        "mark": 0,
+        "rm": "环球国际影城（中山路店）",
+        "sellPrice": "30",
+        "addr": "如皋市海洋南路300号新都国际2楼",
+        "distance": "3.4km"
+      },
+      {
+        "id": 1004,
+        "mark": 0,
+        "rm": "米高国际影城（安定广场店）",
+        "sellPrice": "22",
+        "addr": "如皋市如城街道安定街8号安定广场东侧",
+        "distance": "4.3km"
+      },
+      {
+        "id": 1005,
+        "mark": 0,
+        "rm": "如皋市声屏世纪影城（中山路店）",
+        "sellPrice": "18",
+        "addr": "如皋市如城街道中山路398号西欧国际广场5楼",
+        "distance": "11.1km"
+      },
+      {
+        "id": 1006,
+        "mark": 0,
+        "rm": "星铁IMAX影城",
+        "sellPrice": "22",
+        "addr": "如皋市如城街道惠政路168号新城吾悦广场",
+        "distance": "5.2km"
+      },
+      {
+        "id": 1007,
+        "mark": 0,
+        "rm": "环球国际影城（中山路店）",
+        "sellPrice": "30",
+        "addr": "如皋市海洋南路300号新都国际2楼",
+        "distance": "0.2km"
+      },
+      {
+        "id": 1008,
+        "mark": 0,
+        "rm": "米高国际影城（安定广场店）",
+        "sellPrice": "22",
+        "addr": "如皋市如城街道安定街8号安定广场东侧",
+        "distance": "30.3km"
+      },
+      {
+        "id": 1009,
+        "mark": 0,
+        "rm": "环球国际影城（中山路店）",
+        "sellPrice": "30",
+        "addr": "如皋市海洋南路300号新都国际2楼",
+        "distance": "20.2km"
+      },
+      {
+        "id": 1010,
+        "mark": 0,
+        "rm": "米高国际影城（安定广场店）",
+        "sellPrice": "22",
+        "addr": "如皋市如城街道安定街8号安定广场东侧",
+        "distance": "7.7km"
+      }
+    ]
+  },
+  "order": {
+    "orders": [
+      {
+        "id": 12345,
+        "movie_name": "峰爆",
+        "cinema_name": "星铁IMAX影城",
+        "start_date": "11月3日",
+        "start_time": "14:00",
+        "fyt": "3号按摩椅厅（60帧）"
+      },
+      {
+        "id": 13425,
+        "movie_name": "阿凡达",
+        "cinema_name": "米高国际影城",
+        "start_date": "11月3日",
+        "start_time": "16:20",
+        "fyt": "5号按摩椅厅（60帧）"
+      },
+      {
+        "id": 14255,
+        "movie_name": "长津湖",
+        "cinema_name": "星铁IMAX影城",
+        "start_date": "11月4日",
+        "start_time": "10:20",
+        "fyt": "1号按摩椅厅（60帧）"
+      },
+      {
+        "id": 16681,
+        "movie_name": "沙丘",
+        "cinema_name": "环球国际影城",
+        "start_date": "11月4日",
+        "start_time": "14:00",
+        "fyt": "2号按摩椅厅（60帧）"
+      },
+      {
+        "id": 13145,
+        "movie_name": "不速来客",
+        "cinema_name": "环球国际影城",
+        "start_date": "11月5日",
+        "start_time": "18:20",
+        "fyt": "3号按摩椅厅（60帧）"
+      }
+    ]
+  }
+}
